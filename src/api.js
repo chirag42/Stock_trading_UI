@@ -30,5 +30,6 @@ export const api = {
   news:  (t) => request(`/stocks/${t}/news`),
   analysis: (t) => request(`/stocks/${t}/analysis`),
   buy:  (ticker, shares) => request("/holdings/buy",  { method: "POST", body: JSON.stringify({ ticker, shares }) }),
+  chat: (message, history) => request("/chat", { method: "POST", body: JSON.stringify({ message, history }) }),
   sell: (ticker, shares) => request("/holdings/sell", { method: "POST", body: JSON.stringify({ ticker, shares }) }),
 };

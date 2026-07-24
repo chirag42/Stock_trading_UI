@@ -5,6 +5,7 @@ import { api, clearToken } from "../api";
 const NAV = [
   { label: "Personal Investing", path: "/" },
   { label: "Watchlist", path: "/watchlist" },
+  { label: "Ask AI", path: "/chat" },
   { label: "Retirement", path: "/retirement" },
   { label: "Finance", path: "/finance" },
   { label: "Budgeting", path: "/budgeting" },
