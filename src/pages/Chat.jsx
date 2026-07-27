@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { api } from "../api";
+import remarkGfm from "remark-gfm";
+
 
 const SUGGESTIONS = [
   "How are my holdings doing?",
@@ -48,7 +50,7 @@ export default function Chat() {
         )}
         {messages.map((m, i) => (
           <div key={i} className={`bubble ${m.role}`}>
-            <ReactMarkdown>{m.content}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
           </div>
         ))}
         {loading && <div className="bubble assistant muted">Thinking…</div>}
