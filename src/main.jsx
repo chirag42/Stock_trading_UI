@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import StockDetail from "./pages/StockDetail";
 import Watchlist from "./pages/Watchlist";
+import Chat from "./pages/Chat";
 import ComingSoon from "./pages/ComingSoon";
 import { getToken } from "./api";
 import "./styles.css";
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route element={<ProtectedLayout />}>
         <Route path="/" element={<Dashboard />} />
         <Route path="/watchlist" element={<Watchlist />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/retirement" element={<ComingSoon title="Retirement" />} />
         <Route path="/finance" element={<ComingSoon title="Finance" />} />
         <Route path="/budgeting" element={<ComingSoon title="Budgeting" />} />

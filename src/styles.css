@@ -163,3 +163,34 @@ button.sell { background: #C0504D; }
 .wl-mid { flex: 1; display: flex; align-items: center; gap: 14px; }
 .wl-price { font-size: 17px; font-weight: bold; }
 .change { font-size: 14px; font-weight: bold; }
+
+/* Chat */
+.chat-page { display: flex; flex-direction: column; }
+.chat-window {
+  background: #fff; border: 1px solid #e2e6ea; border-radius: 10px;
+  padding: 16px; min-height: 340px; max-height: 60vh; overflow-y: auto; margin: 12px 0;
+}
+.chat-suggest { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  background: #eef2f6; color: #2E75B6; border: 1px solid #d6e2ee;
+  padding: 8px 12px; border-radius: 16px; font-size: 13px; cursor: pointer;
+}
+.bubble {
+  padding: 10px 14px; border-radius: 12px; margin: 8px 0; max-width: 80%;
+  font-size: 14px; line-height: 1.5;
+}
+.bubble.user { background: #2E75B6; color: #fff; margin-left: auto; border-bottom-right-radius: 3px; }
+.bubble.assistant { background: #f1f4f7; color: #1a1a1a; margin-right: auto; border-bottom-left-radius: 3px; }
+.bubble p { margin: 0; }
+.chat-input { display: flex; gap: 8px; }
+.chat-input input { flex: 1; padding: 12px 14px; font-size: 15px; }
+
+.bubble h1, .bubble h2, .bubble h3 { font-size: 15px; margin: 8px 0 4px; font-weight: bold; }
+.bubble p { margin: 6px 0; }
+.bubble ul, .bubble ol { margin: 6px 0; padding-left: 20px; }
+.bubble li { margin: 3px 0; }
+.bubble strong { font-weight: 600; }
+.bubble code { background: #eef2f6; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+.bubble table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 13px; }
+.bubble th, .bubble td { border: 1px solid #d6dde5; padding: 6px 10px; text-align: left; }
+.bubble th { background: #eef2f6; }
